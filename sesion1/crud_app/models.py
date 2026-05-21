@@ -1,7 +1,16 @@
+import re
 from database import conectar
 
 
+def email_valido(email):
+    patron = r'^[\w\.-]+@[\w\.-]+\.\w{2,}$'
+    return re.match(patron, email) is not None
+
+
 def crear_estudiante(nombre, carrera, semestre, email):
+    if not email_valido(email):
+        print(f"Error: el email '{email}' no tiene un formato válido.")
+        return
     conn = conectar()
     cursor = conn.cursor()
     cursor.execute(

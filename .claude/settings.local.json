@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Skill(anthropic-skills:pdf)",
+      "Skill(anthropic-skills:pdf:*)",
+      "PowerShell(New-Item -ItemType Directory -Force \"C:\\\\Users\\\\MADELAINE SAAD\\\\Desktop\\\\practica\\\\sesion1\\\\crud_app\")",
+      "PowerShell(New-Item -ItemType Directory -Force \"C:\\\\Users\\\\MADELAINE SAAD\\\\Desktop\\\\practica\\\\sesion2\")",
+      "PowerShell(New-Item -ItemType Directory -Force \"C:\\\\Users\\\\MADELAINE SAAD\\\\Desktop\\\\practica\\\\sesion3\\\\.github\\\\workflows\")",
+      "PowerShell(New-Item -ItemType Directory -Force \"C:\\\\Users\\\\MADELAINE SAAD\\\\Desktop\\\\practica\\\\sesion4\")"
+    ]
+  }
+}
